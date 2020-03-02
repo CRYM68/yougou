@@ -1,0 +1,70 @@
+.main{
+      height: 100vh;
+      position: flex;
+      top: 100rpx;
+      bottom: 0;
+      display: flex;
+      overflow: hidden;
+}
+.menu{
+      width: 198rpx;
+      background-color: #f4f4f4;
+      overflow: auto;
+      flex-shrink: 0;
+}
+.card{
+      height: 100rpx;
+      line-height: 100rpx;
+      text-align: center;
+      font-size: 30rpx;
+      border-bottom: 1px solid #eee;
+      border-right: 1px solid #eee;
+      position: relative;
+}
+
+/* 高亮 */
+.active{
+      background-color: #fff;
+      border-right: 1px solid #fff;
+}
+.active text{
+      width: 8rpx;
+      height: 60rpx;
+      background-color: #eb4450;
+      position: absolute;
+      left: 0;
+      top: 20rpx;
+}
+
+/* 产品 */
+.content{
+      flex:1;
+      overflow: auto;
+}
+.title{
+      text-align: center;
+      color: #ccc;
+      padding: 20rpx;
+}
+.title text{
+      color: #000;
+}
+.product_list{
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+}
+.product{
+      width: 184rpx;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      text-align: center;
+      font-size: 25rpx;
+      margin-bottom: 25rpx;
+      overflow: hidden;
+}
+.product image{
+      width:184rpx;
+      height: 100rpx;
+}

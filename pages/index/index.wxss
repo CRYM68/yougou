@@ -1,0 +1,104 @@
+/* 轮播图 */
+.swiper{
+  height: 340rpx;
+}
+.swiper image{
+  width: 750rpx;
+  height:340rpx
+}
+
+/* 导航 */
+.navigation{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20rpx 0;
+}
+
+.navigation image{
+  width: 128rpx;
+  height: 140rpx;
+}
+
+/* 分栏 */
+
+.floor_title{
+  width: 750rpx;
+  height: 60rpx;
+  padding: 30rpx 0 0 0;
+  background-color: #f4f4f4;
+}
+
+ .floor_content{
+  display: flex;
+  box-sizing: border-box;
+  height: 426rpx;
+  padding: 20rpx 16rpx;
+}
+
+.floor_content .left{
+ margin-right: 10rpx;
+}
+.floor_content image{
+  width: 230rpx;
+  height: 386rpx;
+}
+.floor_content .right{
+  flex: 1;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-content:space-between;
+}
+.floor_content .floor_item{
+  width: 235rpx;
+  height: 188rpx;
+}
+
+/* 分栏第二样式 */
+.floor+.floor .floor_content .right .floor_item:nth-child(3n+1){
+  width: 272rpx;
+}
+.floor+.floor .floor_content .right .floor_item:nth-child(2),
+.floor+.floor .floor_content .right .floor_item:nth-child(3)
+{
+  width: 193rpx;
+}
+
+
+/* 底线 */
+.underLine{
+  width: 750rpx;
+  height: 300rpx;
+  background-color:#f4f4f4;
+  padding: 20rpx 0 ;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* 回到顶部 */
+.toTop{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  background-color:rgba(255, 255, 255, .7);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20rpx;
+  right: 20rpx;
+  padding: 10rpx;
+}
+.arrow{
+  width: 30rpx;
+  height: 30rpx;
+  border-left: 2px solid rgb(61, 61, 61);
+  border-top: 2px solid rgb(61, 61, 61);
+  transform: rotate(45deg);
+}
+.arrow+text{
+  font-size: 12px;
+}

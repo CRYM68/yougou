@@ -1,0 +1,48 @@
+<view class="container">
+	<!-- 顶部搜索栏 -->
+	<search></search>
+	<!-- 轮播图 -->
+	<swiper indicator-dots class="swiper" autoplay="3000" indicator-color='rgba(255,255,255,.4)' indicator-active-color='#fff'>
+		<block wx:for="{{swiper_img}}" wx:key="index">
+			<swiper-item>
+				<image src='{{item.image_src}}' mode="aspectFill"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+	<!-- 导航 -->
+	<view class="navigation">
+		<block wx:for="{{navigation}}" wx:key="index">
+			<navigation url="">
+				<image src="{{item.image_src}}" mode="aspectFill"></image>
+			</navigation>
+		</block>
+	</view>
+	<!-- 分栏 -->
+	<view class="floor" wx:for="{{floor}}" wx:key='index'>
+		<image src="{{item.floor_title.image_src}}" mode="aspectFill" class="floor_title"></image>
+		<view class="floor_content">
+			<!-- 左 -->
+			<view class="left">
+				<image src="{{item.product_list[0].image_src}}"></image>
+			</view>
+			<!-- 右 -->
+			<view class="right">
+				<block wx:for="{{item.product_list}}" wx:key="index" wx:if="{{!index==0}}">
+					<image src="{{item.image_src}}" class="floor_item"></image>
+				</block>
+			</view>
+		</view>
+	</view>
+
+	<!-- 底线 -->
+	<view class="underLine">
+		<text>_(:з」∠)_我是底线!</text>
+	</view>
+
+	<!-- 回到顶部 -->
+	<view class="toTop" bindtap="backTop">
+		<view class="arrow"></view>
+		<text>顶部</text>
+	</view>
+
+</view>
