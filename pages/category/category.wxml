@@ -11,17 +11,21 @@
 				</view>
 			</block>
 		</view>
+
 		<!-- 显示区 -->
 		<view class="content">
+
 			<!-- 循环类别 -->
 			<block wx:for="{{category[current].children}}" wx:key="index">
-				<view class="title">
+				<!-- 没有product就不要title了 -->
+				<view class="title" wx:if="{{item.children}}">
 					/ <text>{{item.cat_name}}</text> /
 				</view>
+
 				<!-- 循环产品 -->
 				<view class="product_list">
 					<block wx:for="{{item.children}}" wx:key="index">
-						<navigator url='' class="product">
+						<navigator url='/pages/goods_list/goods?keyword={{item.cat_name}}' class="product">
 							<image src='{{item.cat_icon}}' mode="aspectFit"></image>
 							<text>{{item.cat_name}}</text>
 						</navigator>
@@ -29,5 +33,6 @@
 				</view>
 			</block>
 		</view>
+
 	</view>
 </view>

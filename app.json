@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/category/category",
     "pages/cart/cart",
-    "pages/personal/personal"
+    "pages/personal/personal",
+    "pages/goods_list/goods"
   ],
   "window": {
     "navigationBarBackgroundColor":"#ff2d4a",
