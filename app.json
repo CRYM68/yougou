@@ -4,7 +4,12 @@
     "pages/category/category",
     "pages/cart/cart",
     "pages/personal/personal",
-    "pages/goods_list/goods"
+    "pages/goods_list/goods",
+    "pages/search/search",
+    "pages/goods_detail/goods_detail",
+    "pages/order_enter/order_enter",
+    "pages/auth/auth",
+    "pages/pay/pay"
   ],
   "window": {
     "navigationBarBackgroundColor":"#ff2d4a",

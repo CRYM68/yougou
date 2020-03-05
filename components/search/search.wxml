@@ -1,4 +1,4 @@
-<navigator>
+<navigator url="/pages/search/search">
 	<view class="search">
 		<view class="search-input">
 			<icon type="search" size="20" class="icon"/>搜索
