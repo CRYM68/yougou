@@ -8,7 +8,8 @@
     "pages/search/search",
     "pages/goods_detail/goods_detail",
     "pages/order_enter/order_enter",
-    "pages/pay/pay"
+    "pages/pay/pay",
+    "pages/authorize/index"
   ],
   "window": {
     "navigationBarBackgroundColor":"#ff2d4a",

@@ -25,7 +25,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.10.2",
-	"appid": "wxd2b2f9e3127b0f68",
+	"appid": "wxfb52f2d7b2f6123a",
 	"projectname": "%E9%BB%91%E9%A9%AC%E4%BC%98%E8%B4%AD",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -59,15 +59,15 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/cart/cart",
-					"pathName": "pages/cart/cart",
+					"name": "pages/authorize/index",
+					"pathName": "pages/authorize/index",
 					"query": "goods_id= 55622",
 					"scene": null
 				},
 				{
 					"id": 1,
-					"name": "pages/goods_detail/goods_detail",
-					"pathName": "pages/goods_detail/goods_detail",
+					"name": "pages/order_enter/order_enter",
+					"pathName": "pages/order_enter/order_enter",
 					"query": "goods_id=11122",
 					"scene": null
 				}

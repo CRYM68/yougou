@@ -78,8 +78,8 @@
 			</view>
 			<view class="allprice-btm">包含运费</view>
 		</view>
-		<view class="checkout-btn">
+		<navigator class="checkout-btn" url="/pages/order_enter/order_enter">
 			结算
-		</view>
+		</navigator>
 	</view>
 </view>
