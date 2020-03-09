@@ -8,7 +8,6 @@
     "pages/search/search",
     "pages/goods_detail/goods_detail",
     "pages/order_enter/order_enter",
-    "pages/auth/auth",
     "pages/pay/pay"
   ],
   "window": {
@@ -17,6 +16,7 @@
     "navigationBarTitleText":"优购"
   },
   "tabBar": {
+    "custom":true,
     "list": [
       {
       "pagePath": "pages/index/index",

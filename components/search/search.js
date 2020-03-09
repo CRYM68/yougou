@@ -19,5 +19,9 @@ Component({
        */
       methods: {
 
-      }
+      },
+      pageLifetimes: {
+            show: function() {
+            }
+          }
 })

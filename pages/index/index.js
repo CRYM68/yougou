@@ -15,7 +15,7 @@ Page({
       this.setData({
         swiper_img: res.data.message
       })
-    })
+    }),
 
     // 导航获取
     request({
@@ -36,6 +36,14 @@ Page({
       })
     })
 
+  },
+  onShow(){
+    if (typeof this.getTabBar === 'function' &&
+    this.getTabBar()) {
+    this.getTabBar().setData({
+      selected: 0
+    })
+  }
   },
 
   // 回到顶部
